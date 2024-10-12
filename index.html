@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Trip Adventure</title>
+    <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#" class="active" onclick="showSection('home', this)">Home</a></li>
+        <li><a href="#" onclick="showSection('services', this)">Services</a></li>
+        <li><a href="#" onclick="showSection('gallery', this)">Gallery</a></li>
+        <li><a href="#" onclick="showSection('contact', this)">Contact</a></li>
+    </ul>
+</nav>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <h1>Waroeng Traveller</h1>
+    <p>Join our open trips and discover the beauty of nature</p>
+    <!-- Tambahkan gambar di sini -->
+    <img src="src/waroeng.jpg" alt="waroeng" class="hero-image">
+
+        <div class="header">
+            <h1>Welcome to Our Website</h1>
+        </div>
+
+        <!-- Teks footer untuk Home -->
+        <div class="footer" Class="hero-footer">
+            <p>&copy; 2024 Waroeng Traveller.</p>
+            <p>Alamat : Jl. Rw. Jaya No.24, RT.007/RW.025, Harapan Jaya, 
+                Kec. Bekasi Utara, Kota Bks, Jawa Barat 17124</p>
+        </div>
+        <div id="contact-info">
+                    <!-- WhatsApp -->
+        <div class="logo">
+            <a href="https://wa.me/628123456789" target="_blank" class = "sublogo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@username" target="_blank" class = "sublogo">
+                <img src="src/tiktok.jpg" alt="TikTok" width="30">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/username" target="_blank" class = "sublogo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+            </a>
+        </div>
+    </div>
+    </section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-item" onclick="showDescription('service1')">
+            <img src="src/gunung gede.jpg" alt="gunung gede" class="service-image">
+            <p class="service-title">Gunung Gede</p> <!-- Teks di bawah gambar -->
+        </div>
+        <div class="service-item" onclick="showDescription('service2')">
+            <img src="src/gunung merbabu.jpg" alt="gunung merbabu" class="service-image">
+            <p class="service-title">Gunung Merbabu</p> <!-- Teks di bawah gambar -->
+        </div>
+        <div class="service-item" onclick="showDescription('service3')">
+            <img src="src/Gunung-Prau-Dieng.jpg" alt="Gunung Prau Dieng" class="service-image">
+            <p class="service-title">Gunung Prau Dieng</p> <!-- Teks di bawah gambar -->
+        </div>
+    </div>
+    <div id="service-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-description"></p>
+        </div>
+    </div>
+</section>
+
+
+<section id="gallery" style="display: none;">
+    <h2>Gallery</h2>
+    <img src="src/Gunung-Prau-Dieng.jpg" alt="Gunung-Prau-Dieng" class="hero-image">
+</section>
+
+<section id="contact" style="display: none;">
+    <h2>Contact Us</h2>
+</section>
+
+<!-- Link ke file JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
